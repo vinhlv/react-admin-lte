@@ -1,0 +1,117 @@
+/********** radio custom *******************/
+.radio-cus {
+  input[type=radio] {
+    display: none;
+  }
+
+  label {
+    display: inline-block;
+    color: #000;
+    cursor: pointer;
+    font-size: 17px;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 28px;
+    padding-right: 32px;
+    position: relative;
+    font-weight: 400;
+
+    &:before {
+      background-color: #fff;
+      border: 1px solid #d9d9d9;
+      border-radius: 50%;
+      content: "";
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      margin-top: -9px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+    }
+
+    &:after {
+      background-color: transparent;
+      border-radius: 50%;
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-top: -5px;
+      position: absolute;
+      left: 4px;
+      top: 50%;
+    }
+  }
+
+  input[type=radio]:checked + label {
+    color: #000;
+
+    &:before {
+      border-color: #000;
+    }
+
+    &:after {
+      background-color: #fff;
+    }
+  }
+
+  &.radio-nolabel {
+    label {
+      padding-left: 24px;
+      padding-right: 0;
+    }
+  }
+}
+
+/********** radio custom .end *************/
+/********** checkbox custom  *************/
+.checkbox-cus {
+  input[type=checkbox],.f-input-control {
+    display: none;
+  }
+
+  .text-check {
+    color: $color-grey;
+    cursor: pointer;
+    display: inline-block;
+    @include rem("font-size", 14);
+    @include rem("line-height", 19);
+    height: 20px;
+    position: relative;
+    padding-left: 32px;
+  }
+
+  .text-check:before {
+    background-color: #fff;
+    border: 1px solid $color-border-grey;
+    border-radius: 4px;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: -11px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+
+  input[type=checkbox]:checked + .text-check:before {
+    background-color: $color-green;
+    border-color: $color-green;
+    content: "\e900";
+    color: $color-white;
+    font-family: 'icomoon';
+    @include rem("font-size", 9);
+    @include rem("line-height", 17);
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  &.checkbox-nolabel {
+    label {
+      padding-left: 22px;
+    }
+  }
+}
+/********** checkbox custom .end *************/

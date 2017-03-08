@@ -1,0 +1,6 @@
+node_modules/
+.tmp/
+coverage/
+build/
+npm-debug.log
+json/

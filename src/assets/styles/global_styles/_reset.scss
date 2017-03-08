@@ -1,0 +1,120 @@
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// |
+// | Reset
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+a,
+address,
+blockquote,
+body,
+dd,
+div,
+dl,
+dt,
+em,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+img,
+label,
+legend,
+li,
+p,
+span,
+strong {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+:focus {
+  outline: 0 !important;
+}
+
+img {
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+a {
+  &:focus,
+  &:hover,
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:link,
+  &:visited {
+    color: #000;
+  }
+}
+
+::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+a,
+button,
+input[type="submit"] {
+  &:active,
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  color: $color-black;
+  font-family: $font-family-text;
+  @include rem("font-size", 27);
+  font-weight: $font-normal;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  min-height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+.wrapper ,.wrapper-container {
+  height: 100%;
+}

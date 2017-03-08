@@ -1,0 +1,39 @@
+.wrapper-container {
+  padding-top: 60px;
+  position: relative;
+}
+.main-container {
+  min-height: 100%;
+  position: relative;
+}
+
+/* signin page */
+.signin-content {
+  @include vertical-align();
+  left: 0;
+  position: absolute;
+  width: 100%;
+
+  .title-form {
+    margin-bottom: 26px;
+  }
+
+  .text-link {
+    color: $color-green;
+    @include rem("font-size", 14);
+    @include rem("line-height", 19);
+    font-weight: $font-semibold;
+    @include transition(color 0.3s ease);
+
+    &:hover {
+      color: $color-dark-green;
+    }
+  }
+
+  .sigin-form-content {
+    margin: 0 auto;
+    padding: 15px;
+    width: 350px;
+  }
+}
+/* signin page .end */

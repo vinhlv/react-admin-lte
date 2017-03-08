@@ -1,0 +1,20 @@
+.btn-green-full-18,a.btn-green-full-18 {
+  background-color: $color-dark-green;
+  border: 0 none transparent;
+  @include border-radius(4px);
+  color: $color-white;
+  cursor: pointer;
+  display: inline-block;
+  @include rem("font-size", 18);
+  @include rem("line-height", 21);
+  height: 40px;
+  padding: 0 15px 3px;
+  text-align: center;
+  @include transition(background-color 0.3s ease);
+  vertical-align: top;
+  width: 100%;
+
+  &:hover, &:focus {
+    background-color: $color-green;
+  }
+}

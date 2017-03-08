@@ -1,0 +1,21 @@
+@import "./global_styles/variables";
+@import "./global_styles/mixins";
+//@import "./global_styles/reset";
+@import "./global_styles/placeholders";
+@import "./global_styles/icons";
+@import "./global_styles/titles";
+@import "./global_styles/buttons";
+@import "./global_styles/forms";
+@import "./global_styles/utility";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+// plugin
+@import "./plugin/custom";
+
+// Page
+@import "./page/page";
+
+// Responsive
+@import "./responsive/responsive";
